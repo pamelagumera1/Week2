@@ -1,0 +1,54 @@
+## 1. Using problem 3 in week 1, write functions for the following:
+    1. Collecting the inputs for the problem. Convert the inputs to the relevant types they should be.
+    2. Calculating the equation given the inputs from the above.
+    3. Printing your result in a preformatted string.
+    
+    Ensure to include a main program that reads the values from the user.
+    
+ def converter(feet = float(input("Please enter measurement in ft:"))):
+    inches = round( feet * 12, 2)
+    yards = round(feet / 3.0, 2)
+    miles =  round(feet / 5280.0,2)
+    print(f"This is feet to inches:", (float(inches)))
+    print(f"This is feet to yard:", (float(yards)))
+    print(f"This is feet to miles:",(float(miles)))
+converter()
+    
+    
+ # 2 Write a function that takes three numbers as parameters, and returns the mean value of those parameters as its result. Include a main program that reads three values from the user and displays their mean.
+
+def Meanscore():
+    score1 = int(input("Enter score 1:"))
+    score2 = int(input("Enter score 2:"))
+    score3 = int(input("Enter score 3:"))
+    mean = round((score1 + score2 + score3) / 3, 1)
+    
+    if mean > 80:
+        print("You made it!")
+    else:
+        print("Until next time")
+    print(f"Mea of total score {mean}.")    
+
+Meanscore()
+
+## 4 
+
+d = {}
+
+def name():
+    x = input('Please enter your name: ')
+    y = int(input('Please enter your score: '))
+
+    print(d.keys())
+    if x in d.keys():
+        d[x]= d[x] + y 
+    else: 
+        d[x] = y 
+    
+    print(d)
+
+while True:
+    name()
+
+
+    
